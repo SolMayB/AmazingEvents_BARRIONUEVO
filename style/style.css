@@ -1,3 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #2c3136, #2c354b, #3c365b, #593062, #8d2e6c);
+    
+}
+
+
 .logo{
     width: 150px;
+}
+.card{
+    background-color: rgba(255, 232, 253, 0.658);
+}
+
+.color{
+    color: azure;
+    font-family: cursive;
+}
+
+.carrousel-cine{
+    width: 100%;
+    height: 300px;
+    display: inline;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
