@@ -10,7 +10,9 @@ body{
     
 }
 
-
+#mainConSta{
+    height: 80vh;
+}
 .logo{
     width: 150px;
 }
