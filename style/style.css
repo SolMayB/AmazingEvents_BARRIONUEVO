@@ -10,8 +10,8 @@ body{
     
 }
 
-#mainConSta{
-    height: 80vh;
+main{
+    min-height: 80vh;
 }
 .logo{
     width: 150px;
@@ -44,3 +44,5 @@ body{
     font-style: italic;
 
 }
+
+

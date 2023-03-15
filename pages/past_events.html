@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Logo_A_E.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Amazing Events - Past Events</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
@@ -67,8 +67,8 @@
                         <img class="carrousel-cine"
                             src="../img/film-movie-filmmaker-movie-director-wallpaper-preview.jpg" alt="">
                         <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Cine</h1>
+                            <div class="carousel-caption text-end">
+                                <h1>Amazing Events</h1>
 
                             </div>
                         </div>
@@ -76,8 +76,8 @@
                     <div class="carousel-item">
                         <img class="carrousel-cine" src="../img/671-6717701_costume-party-hd-png-download.png" alt="">
                         <div class="container">
-                            <div class="carousel-caption">
-                                <h1>One more for good measure</h1>
+                            <div class="carousel-caption text-end">
+                                <h1>Amazing Events</h1>
 
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                         <img class="carrousel-cine" src="../img/food-festival.jpg" alt="">
                         <div class="container">
                             <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
+                                <h1>Amazing Events</h1>
 
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                             alt="">
                         <div class="container">
                             <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
+                                <h1>Amazing Events</h1>
                             </div>
                         </div>
                     </div>
@@ -111,32 +111,13 @@
                 </button>
             </div>
         </section>
-        <div class="color d-flex flex-wrap justify-content-between py-3 ">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Category</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Category</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Category</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                <label class="form-check-label" for="inlineCheckbox4">Category</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                <label class="form-check-label" for="inlineCheckbox5">Category</label>
-            </div>
-            <form role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
+        <div id="checkContainer" class="color d-flex flex-wrap justify-content-between py-3">
 
         </div>
+         <form role="search">
+            <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <label for="search"></label>
+        </form>
 
         <div class="album py-5 ">
             <div class="container">
@@ -152,9 +133,7 @@
                                     <p class="card-text">${description}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./pages/details.html">
-                                                <button type="button" class="btn btn-outline-secondary">Details</button>
-                                            </a>
+                                            <a id="botonD" class="boton btn btn-outline-secondary" href="./details.html?id=${_id}" >Details</a>
                                         </div>
                                         <small class="card-price">${price}</small>
                                     </div>
@@ -193,7 +172,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
     <script type="module" src="../js/amazing.js"></script>
+    <script type="module" src="../js/check.js"></script>
     <script type="module" src="../js/past_events.js"></script>
+    <script type="module" src="../js/details.js"></script>
 </body>
 
 </html>
