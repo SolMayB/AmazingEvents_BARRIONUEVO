@@ -7,15 +7,17 @@ async function obtenerInfo(){
 }
 
 obtenerInfo(); 
-
+const containerCat = document.getElementById("gatito")
 const containerCard = document.getElementById("card_main")
 
 function dibujarCards(array){
     if(array.length == 0){
         containerCard.innerHTML = 
-        `<div class="d-flex align-items-center"> >
+        `<div></div>
+        <div class="d-flex align-items-center"> 
         <img id="not_found" src="../img/not_found.jpg">
-        </div> `
+        </div> 
+        `
         return
     }
     let tarjetas = ''
