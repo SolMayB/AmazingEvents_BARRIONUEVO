@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                          <a class="nav-link active" href="../index.html">Home</a>
+                          <a class="nav-link active" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./upcoming_events.html">Upcoming
@@ -51,87 +51,57 @@
     <main class="container">
       <section class="color py5">
         <h1>Stats</h1>
-        <div class="tabla d-flex justify-content-center align-items-center py-5">
+        <div class="tabla d-flex flex-wrap justify-content-center align-items-center py-5">
           <table class="table table-bordered table table-dark table-striped-columns border-light">
-            <colgroup>
-              <col span="1">
-              <col span="1">
-              <col span="1">
-            </colgroup>
+              <colgroup>
+                <col span="1">
+                <col span="1">
+                <col span="1">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="3">Events statistics</th>
+                </tr>
+                <tr>
+                  <th>Event with the highest percentage of attendance</th>
+                  <th>Event with the lowest percentage of attendance</th>
+                  <th>Event with larger capacity</th>
+                </tr>
+              </thead>
+              <tbody id="tabla1">
+              </tbody>
+          </table>
+          <table class="table table-bordered table table-dark table-striped-columns border-light">
             <thead>
-              <tr>
-                <th colspan="3">Events statistics</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Events with the highest percentage of attendance</td>
-                <td>Events with the lowest percentage of attendance</td>
-                <td>Events with lager capacity</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
               <tr>
                 <th colspan="3">Upcoming event statistics by category</th>
               </tr>
               <tr>
-                <td>Categories</td>
-                <td>Revenues</td>
-                <td>Percentage of attendance</td>
+                <th>Categories</th>
+                <th>Revenues</th>
+                <th>Percentage of attendance</th>
               </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th colspan="3">Past Events statistic</th>
-              </tr>
-              <tr>
-                <td>Categories</td>
-                <td>Revenues</td>
-                <td>Percentage of attendance</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+            </thead>
+            <tbody id="tabla2">
+           
             </tbody>
           </table>
+              <table class="table table-bordered table table-dark table-striped-columns border-light">
+                <thead>
+                  <tr>
+                    <th colspan="3">Past Events statistic</th>
+                  </tr>
+                  <tr>
+                    <th>Categories</th>
+                    <th>Revenues</th>
+                    <th>Percentage of attendance</th>
+                  </tr>
+                </thead>
+                <tbody  id="tabla3">
+
+                </tbody>
+              </table>
+             
         </div>
       </section>
     
@@ -161,6 +131,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous">
     </script>
+    <script type="module" src="../js/stats.js"></script>
 </body>
 
 </html>

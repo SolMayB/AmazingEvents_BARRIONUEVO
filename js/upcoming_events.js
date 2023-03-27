@@ -1,7 +1,20 @@
-import data from "./amazing.js";
-import { dibujarCards } from "./check.js";
+import { dibujarCards} from "./main.js";
+import { checkGobalX} from "./check.js";
 
-function upcomingEvents(events, date) {
+async function obtenerInfo(){
+    let response = await fetch("../algun_lugar/amazing.json")
+    const data = await response.json();
+    let eventos = data.events;
+    let uEvent = upcomingEvents(eventos, data.currentDate);
+    dibujarCards(uEvent)
+    checkGobalX(uEvent)
+}
+
+obtenerInfo(); 
+
+
+
+export function upcomingEvents(events, date) {
     let lista=[];
         for (let i = 0; i < events.length; i++) {
             let element = events[i];
@@ -11,8 +24,3 @@ function upcomingEvents(events, date) {
         return lista;
 }
 
-const contCard = document.querySelector("#card_main");
-
-let uEvent = upcomingEvents(data.events, data.currentDate);
-const ruta = "./"
-dibujarCards(uEvent,ruta)
